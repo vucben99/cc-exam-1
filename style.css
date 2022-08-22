@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
-    border: dotted 1px black;
+    /* border: dotted 1px black; */
 }
 
 body {
@@ -45,24 +45,25 @@ main {
     gap: 60px;
 }
 
-.line-1,
-.line-2 {
+.col-1,
+.col-2 {
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-.line-1 div,
-.line-2 div {
+.col-1 div,
+.col-2 div {
     background-color: var(--secondary);
     width: 400px;
     height: 250px;
     color: var(--primary);
     padding: 2rem;
+    position: relative;
 }
 
 main h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 300;
     padding-bottom: 1em;
     margin-bottom: .3em;
