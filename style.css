@@ -7,5 +7,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
+body {
+    background-color: var(--primary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: solid 1px black;
+}
+
+nav h1 {
+    font-size: 3rem;
+    color: var(--secondary);
+}
+
+nav .material-symbols-outlined {
+    font-size: 3rem;
+    color: var(--secondary);
+}
