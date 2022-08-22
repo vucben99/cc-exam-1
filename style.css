@@ -8,10 +8,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
+    border: dotted 1px black;
 }
 
 body {
     background-color: var(--primary);
+    height: 100vh;
 }
 
 nav {
@@ -19,15 +21,40 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px var(--secondary);
+    height: 10vh;
 }
 
 nav h1 {
     font-size: 3rem;
     color: var(--secondary);
+    font-weight: 700;
 }
 
 nav .material-symbols-outlined {
     font-size: 3rem;
     color: var(--secondary);
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 60px;
+}
+
+.line-1,
+.line-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.line-1 div,
+.line-2 div {
+    background-color: var(--secondary);
+    width: 400px;
+    height: 250px;
 }
